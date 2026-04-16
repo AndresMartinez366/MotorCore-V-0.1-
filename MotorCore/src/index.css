@@ -12,6 +12,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #8b8b8b2a;
 }
 
 
@@ -25,18 +26,18 @@ body {
 }
 
 
-/* HEADER */
+
 .header {
   height: 70px;
   background-color: var(--primary);
-  color: #ffffff;
+  color: #ffffffde;
   display: flex;
   align-items: center;
   padding: 0 20px;
   gap: 20px;
 }
 
-/* Marca */
+
 .brand {
   display: flex;
   align-items: center;
@@ -52,7 +53,7 @@ body {
   width: 40px;
 }
 
-/* Buscador */
+
 .search-box {
   flex: 1;
   max-width: 420px;
@@ -73,7 +74,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Usuario */
+
 .user-info {
   text-align: right;
 }
@@ -133,8 +134,13 @@ body {
 .dashboard {
   flex: 1;
   padding: 25px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.45); 
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 16px;
+  margin: 20px;
 }
+
 
 .dashboard h2 {
   font-size: 22px;
@@ -144,7 +150,7 @@ body {
 
 .dashboard p {
   font-size: 14px;
-  color: #555;
+  color: #555555;
 }
 
 .dashboard-cards {
@@ -185,9 +191,9 @@ body {
 
 .card,
 .status-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -213,7 +219,7 @@ body {
 
 .admin-badge {
   background-color: var(--accent);
-  color: #ffffff;
+  color: #ffffffe5;
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 12px;
@@ -246,7 +252,7 @@ body {
   color: var(--primary);
 }
 
-/* Estado de reparaciones */
+
 .status-cards {
   display: flex;
   gap: 20px;
@@ -274,8 +280,20 @@ body {
 }
 
 .app-container {
-  background-color: rgba(245, 247, 250, 0.94);
+  background-color: rgba(245, 247, 250, 0.048); 
+  backdrop-filter: blur(3px);                 
+  -webkit-backdrop-filter: blur(3px);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+.brand-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.brand-core {
+  color: var(--accent); 
+}
+
