@@ -25,16 +25,70 @@ body {
 }
 
 
+/* HEADER */
 .header {
   height: 70px;
-  background-color: #0a1f44;
+  background-color: var(--primary);
   color: #ffffff;
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 0 25px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 0 20px;
+  gap: 20px;
 }
+
+/* Marca */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.logo {
+  width: 40px;
+}
+
+/* Buscador */
+.search-box {
+  flex: 1;
+  max-width: 420px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Usuario */
+.user-info {
+  text-align: right;
+}
+
+.user-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-role {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
 
 .header h1 {
   font-size: 20px;

@@ -1,3 +1,8 @@
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./pages/Dashboard";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="app-container">
@@ -10,3 +15,5 @@ function App() {
     </div>
   );
 }
+
+export default App;
