@@ -4,11 +4,13 @@ function Sidebar() {
     "Reparaciones",
     "Repuestos",
     "Clientes",
-    "Reportes",
+    "Administración",
   ];
 
   return (
     <aside className="sidebar">
+      <p className="sidebar-title">Admin</p>
+
       <ul>
         {menuItems.map((item, index) => (
           <li key={index}>{item}</li>

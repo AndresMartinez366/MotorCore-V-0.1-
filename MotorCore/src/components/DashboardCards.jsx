@@ -1,9 +1,9 @@
 function DashboardCards() {
   const stats = [
-    { title: "Reparaciones Activas", value: 8 },
-    { title: "Repuestos en Stock", value: 125 },
-    { title: "Clientes Registrados", value: 34 },
-    { title: "Servicios Finalizados", value: 92 },
+    { title: "Motos atendidas hoy", value: 6 },
+    { title: "Reparaciones activas", value: 8 },
+    { title: "Repuestos críticos", value: 3 },
+    { title: "Servicios del mes", value: 42 },
   ];
 
   return (
