@@ -19,10 +19,9 @@ function Dashboard() {
         supervisar las reparaciones, repuestos y clientes del sistema.
       </p>
 
-      {/* KPIs PRINCIPALES */}
+      
       <DashboardCards />
 
-      {/* ESTADO DE REPARACIONES */}
       <div className="dashboard-section">
         <h3>Estado de Reparaciones</h3>
 

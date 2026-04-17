@@ -1,21 +1,32 @@
 function Sidebar() {
   const menuItems = [
-    "Dashboard",
-    "Reparaciones",
-    "Repuestos",
-    "Clientes",
-    "Administración",
+    { label: "Dashboard", path: "#" },
+    { label: "Reparaciones", path: "#" },
+    { label: "Repuestos", path: "#" },
+    { label: "Clientes", path: "#" },
+    { label: "Administración", path: "#" },
   ];
 
   return (
     <aside className="sidebar">
-      <p className="sidebar-title">Admin</p>
+      <p className="sidebar-title">Área Admin</p>
 
-      <ul>
-        {menuItems.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <nav className="sidebar-nav">
+        <ul>
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              
+              <a href={item.path} className="sidebar-link">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <button className="logout-btn" type="button">
+        Cerrar sesión
+      </button>
     </aside>
   );
 }
